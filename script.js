@@ -33,15 +33,15 @@ function randChoice(){
 }
 function whoWins(){
     if(hero == villain){
-      return "It's a draw! Refresh and let's settle this";
+      return "It's a draw! Choose again and let's settle this!";
     }
     else if(villain == "ROCK"){
-      return (hero == "PAPER") ? "You Win! Refresh and play again!" : "You Lose! Refresh and try again."
+      return (hero == "PAPER") ? "You Win! Press another button to play again!" : "You Lose! Choose again to get payback!"
     }
     else if(villain == "PAPER"){
-      return (hero == "SCISSORS") ? "You Win! Refresh and play again!" : "You Lose! Refresh and try again."
+      return (hero == "SCISSORS") ? "You Win! Press another button to play again!" : "You Lose! Choose again to get payback!"
     }
     else if(villain == "SCISSORS"){
-      return (hero == "ROCK") ? "You Win! Refresh and play again!" : "You Lose! Refresh and try again."
+      return (hero == "ROCK") ? "You Win! Press another button to play again!" : "You Lose! Choose again to get payback!"
     }
 }
