@@ -1,28 +1,12 @@
 function start(){
-var numb = 99,
-    bottle = "bottles",
-    lyrics = "",
-    output = document.getElementById('container');
-while (numb > 0) {
-    if (numb == 1) {
-        bottle = "bottle";
+    var array = [23, 12, 54, 76, 87, 54, 67, 976, 356, 345, 245];
+    var largest= 0;
+
+    for (i=0; i<array.length; i++){
+        if (array[i]>largest) {
+            largest=array[i];
+        }
     }
 
-    lyrics += numb + " ";
-    lyrics += bottle + " of beer on the wall, ";
-    lyrics += numb + " " + bottle + " of beer.<br>";
-    
-    numb--;
-    lyrics += "Take one down and pass it around, ";
-    lyrics += + numb + " bottles of beer on the wall.<hr>"
-
-    if (numb == 0) {
-        numb = "no more";
-    }
-    output.innerHTML += lyrics;
-    lyrics = '';
-}
-
-output.innerHTML += " No more bottles of beer on the wall, no more bottles of beer.  Go to the store and buy some more, 99 bottles of beer on the wall.";
-
+    document.getElementById("container").innerHTML+=("The largest number in your array is "+largest);
 }
